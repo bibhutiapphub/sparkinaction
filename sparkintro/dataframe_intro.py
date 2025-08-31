@@ -13,3 +13,4 @@ my_df.createGlobalTempView("fire_service_data")
 
 from_view_df = spark.sql("select * from global_temp.fire_service_data")
 from_view_df.show()
+spark.stop()
